@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz App</title>
+  </head>
+  <body onload="questionss(1)">//loading first question
+    <header class="backheader">
+    //all operations including option index,Next option,Previous option and End test
+    <div class="header">
+      <button class='item'id="prev" onclick="prev()">Previous</button>
+      <button class='item'id="k1" onclick="questionss(1)">1</button>
+      <button class='item'id="k2" onclick="questionss(2)">2</button>
+      <button class='item'id="k3" onclick="questionss(3)">3</button>
+      <button class='item'id="k4" onclick="questionss(4)">4</button>
+      <button class='item'id="k5" onclick="questionss(5)">5</button>
+      <button class='item'id="k6" onclick="questionss(6)">6</button>
+      <button class='item'id="k7" onclick="questionss(7)">7</button>
+      <button class='item'id="k8" onclick="questionss(8)">8</button>
+      <button class='item'id="k9" onclick="questionss(9)">9</button>
+      <button class='item'id="k10" onclick="questionss(10)">10</button>
+      <button class='item'id="next" onclick="next()">Next</button>
+      <div class='items'><p id="cques"></p><p>/10</p></div>
+      <div class='timer'>&nbsp;&nbsp;<p>00:</p><p>00:</p><p id="secs">60</p>&nbsp;</div>
+      <button class='item'id="next" onclick="end()">End</button>
+
+    </div>
+  </header>
+  //copyright
+  <marquee>Project by Malyaj1425©️</marquee>
+    <div id="main">
+      <div id="Q">
+        <div id="change1"></div>
+      </div>
+      <div id="O">
+        <div id="change2"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
